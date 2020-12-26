@@ -62,6 +62,9 @@ public struct Expression<Datatype> : ExpressionType {
         self.bindings = bindings
     }
 
+    public init(_ template: String, _ dataType: Datatype.Type) {
+        self.init(template, [])
+    }
 }
 
 public protocol Expressible {
